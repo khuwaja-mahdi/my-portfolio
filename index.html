@@ -1,129 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO Title (IMPORTANT) -->
-    <title>Muhammad Mahdi | Computer Science Student & Programmer</title>
-
-    <!-- SEO Meta Description -->
-    <meta name="description" content="Muhammad Mahdi is a BS Computer Science student at NUML University Lahore. Explore skills, projects, education, and professional experience.">
-
-    <!-- SEO Keywords (optional but useful for small sites) -->
-    <meta name="keywords" content="Muhammad Mahdi, Computer Science Student, BSCS NUML, Java Programmer, Portfolio Website, CV Website">
-
-    <!-- Author -->
-    <meta name="author" content="Muhammad Mahdi">
-
-    <!-- Open Graph (for social sharing) -->
-    <meta property="og:title" content="Muhammad Mahdi | Computer Science Student">
-    <meta property="og:description" content="Personal CV website showcasing education, skills, projects, and experience.">
-    <meta property="og:type" content="website">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Muhammad Mahdi | Data Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
 
-<nav aria-label="Main Navigation">
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#faq">FAQs</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<nav>
+  <div class="logo">Muhammad Mahdi</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<header class="hero">
-    <!-- Only ONE H1 for SEO -->
-    <h1>Muhammad Mahdi</h1>
-    <p>Computer Science Student | Aspiring Programmer</p>
-</header>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-circle1"></div>
+  <div class="hero-circle2"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><div class="hero-badge-dot"></div> Open to Junior Data Analyst Roles</div>
+    <h1>Data Analyst<br/><span class="hl">Muhammad Mahdi</span></h1>
+    <p class="hero-role">BS CS Student at NUML University Lahore</p>
+    <p class="hero-desc">I analyze data, build ML models and write clean code. Two complete end-to-end analytics projects — built from scratch.</p>
+    <div class="btns">
+      <a href="#projects" class="btn btn-navy">View Projects</a>
+      <a href="cv.pdf" download class="btn btn-outline">⬇ Download CV</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-v">2</div><div class="stat-k">Projects</div></div>
+      <div><div class="stat-v">~17K</div><div class="stat-k">Rows Analyzed</div></div>
+      <div><div class="stat-v">79%</div><div class="stat-k">ML Accuracy</div></div>
+      <div><div class="stat-v">5+</div><div class="stat-k">Tech Skills</div></div>
+    </div>
+  </div>
+</section>
 
-<main class="container">
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <p class="s-label">About Me</p>
+      <h2 class="s-title">Code. Analyze. Build.</h2>
+      <p class="about-p">I'm a BS Computer Science student at NUML University Lahore (5th Semester) with hands-on experience in data analytics and machine learning. I've built two complete end-to-end data analytics projects — covering the full path from raw data to business insights.</p>
+      <p class="about-p">I apply Object-Oriented Programming principles in Python and have a strong foundation in computer science fundamentals. My skills in Python, SQL and Power BI allow me to handle the full data analyst workflow independently.</p>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">OOP</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">Machine Learning</span>
+        <span class="chip">Git & GitHub</span>
+        <span class="chip">Data Cleaning</span>
+        <span class="chip">EDA</span>
+      </div>
+    </div>
+    <div class="info-cards">
+      <div class="ic"><div class="ic-icon">🎓</div><div><strong>NUML University, Lahore</strong><span>BS Computer Science — 5th Semester</span></div></div>
+      <div class="ic"><div class="ic-icon">📍</div><div><strong>Township, Lahore, Pakistan</strong><span>Open to remote & on-site roles</span></div></div>
+      <div class="ic"><div class="ic-icon">📧</div><div><strong>khuwajamahdi445@gmail.com</strong><span>Responds within 24 hours</span></div></div>
+      <div class="ic"><div class="ic-icon">📞</div><div><strong>0302-3323153</strong><span>Mon–Sat, 9am–6pm PKT</span></div></div>
+    </div>
+  </div>
+</section>
 
-    <section id="about">
-        <h2>About Muhammad Mahdi</h2>
-        <p>
-            Motivated Computer Science student currently enrolled in the BSCS program at
-            NUML University Lahore. Passionate about programming, problem-solving, and continuous
-            learning through practical projects.
-        </p>
-    </section>
+<!-- SKILLS -->
+<section id="skills">
+  <p class="s-label">Skills</p>
+  <h2 class="s-title">Technical Toolkit</h2>
+  <p class="s-desc">Tools and technologies I use to analyze data, build models and develop software.</p>
+  <div class="sk-grid">
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills">
-            <span>Meta Ads</span>
-            <span>MS Word</span>
-            <span>PowerPoint</span>
-            <span>Java Programming</span>
-        </div>
-    </section>
+    <div class="sk-card">
+      <div class="sk-top"><div class="sk-ico">🐍</div><h3>Python & Data Analysis</h3></div>
+      <div class="sk-rows">
+        <div class="sk-row"><div class="sk-info"><span>Pandas / NumPy</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
+        <div class="sk-row"><div class="sk-info"><span>Matplotlib / Seaborn</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
+        <div class="sk-row"><div class="sk-info"><span>OOP in Python</span><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill" style="width:78%"></div></div></div>
+        <div class="sk-row"><div class="sk-info"><span>Scikit-learn (ML)</span><span class="sk-pct">72%</span></div><div class="sk-bar"><div class="sk-fill" style="width:72%"></div></div></div>
+      </div>
+    </div>
 
-    <section id="projects">
-        <h2>Academic & Practical Projects</h2>
-        <ul>
-            <li>Housing Society Management System using OOP and Java GUI</li>
-            <li>Conducted academic awareness sessions for school students</li>
-        </ul>
-    </section>
+    <div class="sk-card">
+      <div class="sk-top"><div class="sk-ico">🗄️</div><h3>SQL & Databases</h3></div>
+      <div class="sk-rows">
+        <div class="sk-row"><div class="sk-info"><span>SQL Server (SSMS)</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
+        <div class="sk-row"><div class="sk-info"><span>GROUP BY / Aggregations</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
+        <div class="sk-row"><div class="sk-info"><span>Window Functions / CTEs</span><span class="sk-pct">68%</span></div><div class="sk-bar"><div class="sk-fill" style="width:68%"></div></div></div>
+      </div>
+    </div>
 
-    <section id="education">
-        <h2>Education Background</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Institution</th>
-                    <th>Qualification</th>
-                    <th>Duration</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>NUML University</td>
-                    <td>BS Computer Science</td>
-                    <td>Currently Enrolled</td>
-                </tr>
-                <tr>
-                    <td>Punjab Group of Colleges</td>
-                    <td>Intermediate</td>
-                    <td>2022 – 2024</td>
-                </tr>
-                <tr>
-                    <td>The Green School</td>
-                    <td>Matriculation</td>
-                    <td>2020 – 2022</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <div class="sk-card">
+      <div class="sk-top"><div class="sk-ico">📊</div><h3>Power BI & Visualization</h3></div>
+      <div class="sk-rows">
+        <div class="sk-row"><div class="sk-info"><span>Dashboard Design</span><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill" style="width:78%"></div></div></div>
+        <div class="sk-row"><div class="sk-info"><span>DAX Basics</span><span class="sk-pct">55%</span></div><div class="sk-bar"><div class="sk-fill" style="width:55%"></div></div></div>
+        <div class="sk-row"><div class="sk-info"><span>Data Modeling</span><span class="sk-pct">65%</span></div><div class="sk-bar"><div class="sk-fill" style="width:65%"></div></div></div>
+      </div>
+    </div>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <p><strong>Agent</strong> — MindBridge</p>
-    </section>
+    <div class="sk-card">
+      <div class="sk-top"><div class="sk-ico">💻</div><h3>Programming Fundamentals</h3></div>
+      <div class="sk-rows">
+        <div class="sk-row"><div class="sk-info"><span>OOP in Python</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
+        <div class="sk-row"><div class="sk-info"><span>Data Structures</span><span class="sk-pct">72%</span></div><div class="sk-bar"><div class="sk-fill" style="width:72%"></div></div></div>
+        <div class="sk-row"><div class="sk-info"><span>Git & GitHub</span><span class="sk-pct">75%</span></div><div class="sk-bar"><div class="sk-fill" style="width:75%"></div></div></div>
+      </div>
+    </div>
 
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <address>
-            <p>📞 <a href="tel:+923023323153">0302-3323153</a></p>
-            <p>📧 <a href="mailto:khuwajamahdi445@gmail.com">khuwajamahdi445@gmail.com</a></p>
-            <p>📍 Township, Lahore, Pakistan</p>
-        </address>
-    </section>
+  </div>
+</section>
 
-</main>
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="s-label">Projects</p>
+  <h2 class="s-title">What I've Built</h2>
+  <p class="s-desc">End-to-end projects across data analytics, machine learning and software development.</p>
+  <div class="proj-grid">
 
-<footer>
-    <p>© 2026 Muhammad Mahdi | Computer Science Portfolio</p>
-</footer>
+    <div class="proj-card">
+      <div class="proj-top"><div class="proj-emoji">📱</div><span class="proj-badge b-data">Data + ML</span></div>
+      <h3>Telco Customer Churn Analysis</h3>
+      <p>Full ML pipeline to predict customer churn on 7,032 telecom records — from cleaning to model deployment.</p>
+      <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">Scikit-learn</span><span class="ptag">Pandas</span><span class="ptag">Seaborn</span><span class="ptag">Power BI</span></div>
+      <div class="proj-buls">
+        <div class="proj-bul">Identified 26.54% churn rate and key business drivers</div>
+        <div class="proj-bul">Logistic Regression 79% · Random Forest 79.5% accuracy</div>
+        <div class="proj-bul">10+ visualizations + interactive Power BI dashboard</div>
+      </div>
+      <a href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio/tree/master/Project1_Churn" target="_blank" class="proj-link">View on GitHub →</a>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-top"><div class="proj-emoji">🛒</div><span class="proj-badge b-data">Data + SQL</span></div>
+      <h3>Superstore Sales Dashboard</h3>
+      <p>Analyzed 9,994 rows of US retail data to uncover regional, category and seasonal sales trends.</p>
+      <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">SQL Server</span><span class="ptag">Pandas</span><span class="ptag">Matplotlib</span><span class="ptag">Power BI</span></div>
+      <div class="proj-buls">
+        <div class="proj-bul">15+ SQL queries — GROUP BY, Window Functions, CTEs</div>
+        <div class="proj-bul">West Region highest sales · Technology most profitable</div>
+        <div class="proj-bul">Professional Power BI dashboard with custom theme</div>
+      </div>
+      <a href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio/tree/master/Project2_Sales" target="_blank" class="proj-link">View on GitHub →</a>
+    </div>
+
+
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <p class="s-label">Education</p>
+  <h2 class="s-title">Academic Background</h2>
+  <p class="s-desc">Formal education combined with practical self-taught data skills.</p>
+  <div class="edu-list">
+    <div class="edu-card"><div class="edu-ico">🎓</div><div><div class="edu-yr">2024 — 2028</div><h3>BS Computer Science</h3><p>NUML University, Lahore — Currently Enrolled (5th Semester)</p></div></div>
+    <div class="edu-card"><div class="edu-ico">📘</div><div><div class="edu-yr">2022 — 2024</div><h3>Intermediate (FSc)</h3><p>Punjab Group of Colleges, Lahore</p></div></div>
+    <div class="edu-card"><div class="edu-ico">📗</div><div><div class="edu-yr">2020 — 2022</div><h3>Matriculation</h3><p>The Green School, Lahore</p></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="s-label">Contact</p>
+  <h2 class="s-title">Let's Connect</h2>
+  <p class="s-desc">Open to Junior Data Analyst roles, internships and collaborations.</p>
+  <div class="contact-grid">
+    <div class="contact-list">
+      <a href="mailto:khuwajamahdi445@gmail.com" class="contact-a"><div class="ca-icon">📧</div><div><strong>Email</strong><span>khuwajamahdi445@gmail.com</span></div></a>
+      <a href="tel:+923023323153" class="contact-a"><div class="ca-icon">📞</div><div><strong>Phone</strong><span>0302-3323153</span></div></a>
+      <a class="contact-a"><div class="ca-icon">📍</div><div><strong>Location</strong><span>Township, Lahore, Pakistan</span></div></a>
+      <a href="https://github.com/khuwaja-mahdi" target="_blank" class="contact-a"><div class="ca-icon">💻</div><div><strong>GitHub</strong><span>github.com/khuwaja-mahdi</span></div></a>
+    </div>
+    <div class="cta">
+      <h3>View My Work</h3>
+      <p>All projects documented with clean code, README files and business insights.</p>
+      <div class="cta-btns">
+        <a href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio" target="_blank" class="btn btn-white">⭐ GitHub Portfolio</a>
+        <a href="cv.pdf" download class="btn btn-outline-white">⬇ Download CV (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Muhammad Mahdi — Data Analyst & Developer · Lahore, Pakistan</footer>
 
 </body>
 </html>
