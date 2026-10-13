@@ -3,194 +3,200 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Muhammad Mahdi | Data Analyst</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<title>Muhammad Mahdi | Data Analyst &amp; Data Science Intern</title>
+<meta name="description" content="Muhammad Mahdi is a BS Computer Science student in Lahore with data science internship experience at Fauji Foods Limited. Python, SQL, Power BI, machine learning and forecasting."/>
+<meta property="og:title" content="Muhammad Mahdi | Data Analyst &amp; Data Science Intern"/>
+<meta property="og:description" content="CatBoost forecasting models, route optimization and end-to-end analytics projects in Python, SQL and Power BI."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<nav>
-  <div class="logo">Muhammad Mahdi</div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#top">Muhammad Mahdi</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-circle1"></div>
-  <div class="hero-circle2"></div>
-  <div class="hero-content">
-    <div class="hero-badge"><div class="hero-badge-dot"></div> Open to Junior Data Analyst Roles</div>
-    <h1>Data Analyst<br/><span class="hl">Muhammad Mahdi</span></h1>
-    <p class="hero-role">BS CS Student at NUML University Lahore</p>
-    <p class="hero-desc">I analyze data, build ML models and write clean code. Two complete end-to-end analytics projects — built from scratch.</p>
-    <div class="btns">
-      <a href="#projects" class="btn btn-navy">View Projects</a>
-      <a href="cv.pdf" download class="btn btn-outline">⬇ Download CV</a>
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="status"><span class="dot" aria-hidden="true"></span>Open to data analyst and data science internships and entry-level roles</p>
+      <h1>Muhammad Mahdi</h1>
+      <p class="role">Data Analyst and Data Science Intern, Lahore</p>
+      <p class="lead">I build forecasting models and dashboards that turn raw data into decisions. This summer I trained price and volume models for milk procurement at Fauji Foods Limited.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="cv.pdf" download>Download CV</a>
+        <a class="btn btn-ghost" href="#projects">See my work</a>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div><div class="stat-v">2</div><div class="stat-k">Projects</div></div>
-      <div><div class="stat-v">~17K</div><div class="stat-k">Rows Analyzed</div></div>
-      <div><div class="stat-v">79%</div><div class="stat-k">ML Accuracy</div></div>
-      <div><div class="stat-v">5+</div><div class="stat-k">Tech Skills</div></div>
-    </div>
+
+    <figure class="results" aria-labelledby="results-title">
+      <figcaption id="results-title">Model accuracy across my work</figcaption>
+      <ul class="bars">
+        <li>
+          <div class="bar-head"><span>Milk price prediction</span><strong>95%</strong></div>
+          <div class="bar" role="img" aria-label="95 percent"><span style="--w:95%"></span></div>
+          <p>CatBoost, Fauji Foods Limited</p>
+        </li>
+        <li>
+          <div class="bar-head"><span>Milk volume prediction</span><strong>93%</strong></div>
+          <div class="bar" role="img" aria-label="93 percent"><span style="--w:93%"></span></div>
+          <p>CatBoost, Fauji Foods Limited</p>
+        </li>
+        <li>
+          <div class="bar-head"><span>Customer churn prediction</span><strong>79.5%</strong></div>
+          <div class="bar" role="img" aria-label="79.5 percent"><span style="--w:79.5%"></span></div>
+          <p>Random Forest, 7,032 telecom records</p>
+        </li>
+      </ul>
+    </figure>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
-  <div class="about-grid">
-    <div>
-      <p class="s-label">About Me</p>
-      <h2 class="s-title">Code. Analyze. Build.</h2>
-      <p class="about-p">I'm a BS Computer Science student at NUML University Lahore (5th Semester) with hands-on experience in data analytics and machine learning. I've built two complete end-to-end data analytics projects — covering the full path from raw data to business insights.</p>
-      <p class="about-p">I apply Object-Oriented Programming principles in Python and have a strong foundation in computer science fundamentals. My skills in Python, SQL and Power BI allow me to handle the full data analyst workflow independently.</p>
-      <div class="chips">
-        <span class="chip">Python</span>
-        <span class="chip">OOP</span>
-        <span class="chip">SQL</span>
-        <span class="chip">Power BI</span>
-        <span class="chip">Machine Learning</span>
-        <span class="chip">Git & GitHub</span>
-        <span class="chip">Data Cleaning</span>
-        <span class="chip">EDA</span>
-      </div>
+<section class="sec" id="about">
+  <div class="wrap sec-in">
+    <h2>About</h2>
+    <div class="body">
+      <p>I'm a BS Computer Science student at NUML University, Lahore, currently in my fifth semester. I enjoy the full data workflow: getting data out of a database, cleaning it, finding what drives the numbers, and presenting the result in a form a team can use.</p>
+      <p>My first industry experience was a data science internship at Fauji Foods Limited, where I worked with real procurement data to forecast milk prices and volumes and to plan more fuel-efficient collection routes. Alongside it, I've completed two end-to-end portfolio projects in Python, SQL and Power BI.</p>
+      <dl class="facts">
+        <div><dt>Based in</dt><dd>Township, Lahore, Pakistan</dd></div>
+        <div><dt>Studying</dt><dd>BS Computer Science, NUML University</dd></div>
+        <div><dt>Looking for</dt><dd>Data analyst or data science internship or entry-level role, remote or on-site</dd></div>
+      </dl>
     </div>
-    <div class="info-cards">
-      <div class="ic"><div class="ic-icon">🎓</div><div><strong>NUML University, Lahore</strong><span>BS Computer Science — 5th Semester</span></div></div>
-      <div class="ic"><div class="ic-icon">📍</div><div><strong>Township, Lahore, Pakistan</strong><span>Open to remote & on-site roles</span></div></div>
-      <div class="ic"><div class="ic-icon">📧</div><div><strong>khuwajamahdi445@gmail.com</strong><span>Responds within 24 hours</span></div></div>
-      <div class="ic"><div class="ic-icon">📞</div><div><strong>0302-3323153</strong><span>Mon–Sat, 9am–6pm PKT</span></div></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="sec" id="experience">
+  <div class="wrap sec-in">
+    <h2>Experience</h2>
+    <div class="body">
+      <article class="job">
+        <header>
+          <h3>Data Science Intern</h3>
+          <p class="meta">Fauji Foods Limited <span>Jul 13 to Aug 7, 2026</span></p>
+        </header>
+        <ul class="plain">
+          <li>Retrieved milk-procurement data from the company's MongoDB database through an API, then cleaned, aggregated (daily and weekly) and engineered features for supplier-wise analysis.</li>
+          <li>Trained and evaluated CatBoost models, reaching 95% prediction accuracy for milk price and 93% for milk volume.</li>
+          <li>Delivered an interactive tool with charts to review historical supplier price and volume and forecast next week's aggregated price and volume.</li>
+          <li>Built a route-optimization tool to minimize fuel consumption of milk-collection trucks, including a module to restructure existing routes and design new ones.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="sec" id="projects">
+  <div class="wrap sec-in">
+    <h2>Projects</h2>
+    <div class="body">
+
+      <article class="proj">
+        <h3>Milk price and volume forecasting</h3>
+        <p class="tag-line">Internship project at Fauji Foods Limited</p>
+        <p>Supplier data from MongoDB, pulled through an API and aggregated by day and week. CatBoost models predict next week's aggregated price (95% accuracy) and volume (93%). The tool also shows each supplier's price and volume history in charts.</p>
+        <p class="stack">CatBoost, Python, Pandas, MongoDB, feature engineering</p>
+      </article>
+
+      <article class="proj">
+        <h3>Milk collection route optimization</h3>
+        <p class="tag-line">Internship project at Fauji Foods Limited</p>
+        <p>A tool that recommends efficient routes for milk-collection trucks to cut fuel use. A planning module restructures the existing routes and helps design new ones.</p>
+        <p class="stack">Python, route planning, optimization</p>
+      </article>
+
+      <article class="proj">
+        <h3>Telco customer churn analysis and prediction</h3>
+        <p class="tag-line">Portfolio project</p>
+        <p>Analyzed 7,032 customer records and found a 26.54% churn rate. Compared Logistic Regression (79% accuracy) and Random Forest (79.5%) on accuracy, precision, recall and F1-score, supported by 10+ visualizations and an interactive Power BI dashboard with 4 charts and 3 slicers.</p>
+        <p class="stack">Python, Pandas, Scikit-learn, Matplotlib, Seaborn, Power BI</p>
+        <a class="link" href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio/tree/master/Project1_Churn" target="_blank" rel="noopener">View code on GitHub</a>
+      </article>
+
+      <article class="proj">
+        <h3>Superstore sales dashboard</h3>
+        <p class="tag-line">Portfolio project</p>
+        <p>Analyzed 9,994 rows of US retail sales (2014 to 2017) with 15+ SQL queries, including window functions and CTEs, plus 8+ chart types in Python. West Region had the highest sales, Technology was the most profitable category, and discounts above 50% consistently caused losses. Presented in a Power BI dashboard with a custom theme.</p>
+        <p class="stack">Python, SQL Server (SSMS), Pandas, Matplotlib, Seaborn, Power BI</p>
+        <a class="link" href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio/tree/master/Project2_Sales" target="_blank" rel="noopener">View code on GitHub</a>
+      </article>
+
     </div>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
-  <p class="s-label">Skills</p>
-  <h2 class="s-title">Technical Toolkit</h2>
-  <p class="s-desc">Tools and technologies I use to analyze data, build models and develop software.</p>
-  <div class="sk-grid">
-
-    <div class="sk-card">
-      <div class="sk-top"><div class="sk-ico">🐍</div><h3>Python & Data Analysis</h3></div>
-      <div class="sk-rows">
-        <div class="sk-row"><div class="sk-info"><span>Pandas / NumPy</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
-        <div class="sk-row"><div class="sk-info"><span>Matplotlib / Seaborn</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
-        <div class="sk-row"><div class="sk-info"><span>OOP in Python</span><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill" style="width:78%"></div></div></div>
-        <div class="sk-row"><div class="sk-info"><span>Scikit-learn (ML)</span><span class="sk-pct">72%</span></div><div class="sk-bar"><div class="sk-fill" style="width:72%"></div></div></div>
-      </div>
+<section class="sec" id="skills">
+  <div class="wrap sec-in">
+    <h2>Skills</h2>
+    <div class="body">
+      <dl class="skills">
+        <div><dt>Data analysis</dt><dd>Python, Pandas, NumPy, Matplotlib, Seaborn, Power BI, SQL Server (SSMS), MongoDB</dd></div>
+        <div><dt>Machine learning</dt><dd>CatBoost, Scikit-learn, Logistic Regression, Random Forest, feature engineering, model evaluation, forecasting</dd></div>
+        <div><dt>SQL</dt><dd>Joins, window functions, CTEs, GROUP BY, HAVING, date functions</dd></div>
+        <div><dt>Programming and tools</dt><dd>OOP in Python, data structures (fundamentals), API data retrieval (basic), Git, GitHub, Jupyter Notebook, VS Code, MS Office</dd></div>
+      </dl>
     </div>
-
-    <div class="sk-card">
-      <div class="sk-top"><div class="sk-ico">🗄️</div><h3>SQL & Databases</h3></div>
-      <div class="sk-rows">
-        <div class="sk-row"><div class="sk-info"><span>SQL Server (SSMS)</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
-        <div class="sk-row"><div class="sk-info"><span>GROUP BY / Aggregations</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
-        <div class="sk-row"><div class="sk-info"><span>Window Functions / CTEs</span><span class="sk-pct">68%</span></div><div class="sk-bar"><div class="sk-fill" style="width:68%"></div></div></div>
-      </div>
-    </div>
-
-    <div class="sk-card">
-      <div class="sk-top"><div class="sk-ico">📊</div><h3>Power BI & Visualization</h3></div>
-      <div class="sk-rows">
-        <div class="sk-row"><div class="sk-info"><span>Dashboard Design</span><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill" style="width:78%"></div></div></div>
-        <div class="sk-row"><div class="sk-info"><span>DAX Basics</span><span class="sk-pct">55%</span></div><div class="sk-bar"><div class="sk-fill" style="width:55%"></div></div></div>
-        <div class="sk-row"><div class="sk-info"><span>Data Modeling</span><span class="sk-pct">65%</span></div><div class="sk-bar"><div class="sk-fill" style="width:65%"></div></div></div>
-      </div>
-    </div>
-
-    <div class="sk-card">
-      <div class="sk-top"><div class="sk-ico">💻</div><h3>Programming Fundamentals</h3></div>
-      <div class="sk-rows">
-        <div class="sk-row"><div class="sk-info"><span>OOP in Python</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
-        <div class="sk-row"><div class="sk-info"><span>Data Structures</span><span class="sk-pct">72%</span></div><div class="sk-bar"><div class="sk-fill" style="width:72%"></div></div></div>
-        <div class="sk-row"><div class="sk-info"><span>Git & GitHub</span><span class="sk-pct">75%</span></div><div class="sk-bar"><div class="sk-fill" style="width:75%"></div></div></div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <p class="s-label">Projects</p>
-  <h2 class="s-title">What I've Built</h2>
-  <p class="s-desc">End-to-end projects across data analytics, machine learning and software development.</p>
-  <div class="proj-grid">
-
-    <div class="proj-card">
-      <div class="proj-top"><div class="proj-emoji">📱</div><span class="proj-badge b-data">Data + ML</span></div>
-      <h3>Telco Customer Churn Analysis</h3>
-      <p>Full ML pipeline to predict customer churn on 7,032 telecom records — from cleaning to model deployment.</p>
-      <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">Scikit-learn</span><span class="ptag">Pandas</span><span class="ptag">Seaborn</span><span class="ptag">Power BI</span></div>
-      <div class="proj-buls">
-        <div class="proj-bul">Identified 26.54% churn rate and key business drivers</div>
-        <div class="proj-bul">Logistic Regression 79% · Random Forest 79.5% accuracy</div>
-        <div class="proj-bul">10+ visualizations + interactive Power BI dashboard</div>
-      </div>
-      <a href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio/tree/master/Project1_Churn" target="_blank" class="proj-link">View on GitHub →</a>
-    </div>
-
-    <div class="proj-card">
-      <div class="proj-top"><div class="proj-emoji">🛒</div><span class="proj-badge b-data">Data + SQL</span></div>
-      <h3>Superstore Sales Dashboard</h3>
-      <p>Analyzed 9,994 rows of US retail data to uncover regional, category and seasonal sales trends.</p>
-      <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">SQL Server</span><span class="ptag">Pandas</span><span class="ptag">Matplotlib</span><span class="ptag">Power BI</span></div>
-      <div class="proj-buls">
-        <div class="proj-bul">15+ SQL queries — GROUP BY, Window Functions, CTEs</div>
-        <div class="proj-bul">West Region highest sales · Technology most profitable</div>
-        <div class="proj-bul">Professional Power BI dashboard with custom theme</div>
-      </div>
-      <a href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio/tree/master/Project2_Sales" target="_blank" class="proj-link">View on GitHub →</a>
-    </div>
-
-
-
   </div>
 </section>
 
 <!-- EDUCATION -->
-<section id="education">
-  <p class="s-label">Education</p>
-  <h2 class="s-title">Academic Background</h2>
-  <p class="s-desc">Formal education combined with practical self-taught data skills.</p>
-  <div class="edu-list">
-    <div class="edu-card"><div class="edu-ico">🎓</div><div><div class="edu-yr">2024 — 2028</div><h3>BS Computer Science</h3><p>NUML University, Lahore — Currently Enrolled (5th Semester)</p></div></div>
-    <div class="edu-card"><div class="edu-ico">📘</div><div><div class="edu-yr">2022 — 2024</div><h3>Intermediate (ICS)</h3><p>Punjab Group of Colleges, Lahore</p></div></div>
-    <div class="edu-card"><div class="edu-ico">📗</div><div><div class="edu-yr">2020 — 2022</div><h3>Matriculation</h3><p>The Green School, Lahore</p></div></div>
+<section class="sec" id="education">
+  <div class="wrap sec-in">
+    <h2>Education</h2>
+    <div class="body">
+      <ul class="edu">
+        <li><div><h3>BS Computer Science</h3><p>NUML University, Lahore. Currently in 5th semester.</p></div><span>2024 to 2028</span></li>
+        <li><div><h3>Intermediate (ICS)</h3><p>Punjab Group of Colleges, Lahore</p></div><span>2022 to 2024</span></li>
+        <li><div><h3>Matriculation</h3><p>The Green School, Lahore</p></div><span>2020 to 2022</span></li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-  <p class="s-label">Contact</p>
-  <h2 class="s-title">Let's Connect</h2>
-  <p class="s-desc">Open to Junior Data Analyst roles, internships and collaborations.</p>
-  <div class="contact-grid">
-    <div class="contact-list">
-      <a href="mailto:khuwajamahdi445@gmail.com" class="contact-a"><div class="ca-icon">📧</div><div><strong>Email</strong><span>khuwajamahdi445@gmail.com</span></div></a>
-      <a href="tel:+923023323153" class="contact-a"><div class="ca-icon">📞</div><div><strong>Phone</strong><span>0302-3323153</span></div></a>
-      <a class="contact-a"><div class="ca-icon">📍</div><div><strong>Location</strong><span>Township, Lahore, Pakistan</span></div></a>
-      <a href="https://github.com/khuwaja-mahdi" target="_blank" class="contact-a"><div class="ca-icon">💻</div><div><strong>GitHub</strong><span>github.com/khuwaja-mahdi</span></div></a>
-    </div>
-    <div class="cta">
-      <h3>View My Work</h3>
-      <p>All projects documented with clean code, README files and business insights.</p>
-      <div class="cta-btns">
-        <a href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio" target="_blank" class="btn btn-white">⭐ GitHub Portfolio</a>
-        <a href="cv.pdf" download class="btn btn-outline-white">⬇ Download CV (PDF)</a>
-      </div>
+<section class="sec contact" id="contact">
+  <div class="wrap sec-in">
+    <h2>Contact</h2>
+    <div class="body">
+      <p class="big"><a href="mailto:khuwajamahdi445@gmail.com">khuwajamahdi445@gmail.com</a></p>
+      <p>Send me a message about an internship or entry-level role, or ask for anything you'd like to see in more detail. My CV and code are below.</p>
+      <ul class="contact-list">
+        <li><span>Phone</span><a href="tel:+923023323153">0302-3323153</a></li>
+        <li><span>GitHub</span><a href="https://github.com/khuwaja-mahdi" target="_blank" rel="noopener">github.com/khuwaja-mahdi</a></li>
+        <li><span>CV</span><a href="cv.pdf" download>Download as PDF</a></li>
+        <li><span>Location</span>Township, Lahore, Pakistan</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<footer>© 2026 Muhammad Mahdi — Data Analyst & Developer · Lahore, Pakistan</footer>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Muhammad Mahdi. Data Analyst, Lahore, Pakistan.</div>
+</footer>
 
 </body>
 </html>
