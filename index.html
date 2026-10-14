@@ -9,97 +9,129 @@
 <meta property="og:description" content="CatBoost forecasting models, route optimization and end-to-end analytics projects in Python, SQL and Power BI."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
-<header class="top">
+<header class="top" id="top">
   <div class="wrap top-in">
-    <a class="brand" href="#top">Muhammad Mahdi</a>
-    <nav aria-label="Main">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true">MM</span>Muhammad Mahdi</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main id="top">
+<main>
 
 <!-- HERO -->
 <section class="hero">
   <div class="wrap hero-in">
     <div class="hero-text">
-      <p class="status"><span class="dot" aria-hidden="true"></span>Open to data analyst and data science internships and entry-level roles</p>
+      <p class="status"><span class="dot" aria-hidden="true"></span>Open to internships and entry-level roles</p>
       <h1>Muhammad Mahdi</h1>
-      <p class="role">Data Analyst and Data Science Intern, Lahore</p>
-      <p class="lead">I build forecasting models and dashboards that turn raw data into decisions. I trained price and volume models for milk procurement at Fauji Foods Limited.</p>
+      <p class="role">Data Analyst &amp; Data Science Intern</p>
+      <p class="lead">I build forecasting models and dashboards that turn raw data into decisions. This summer I trained milk price and volume models at Fauji Foods Limited and designed a tool to cut truck fuel use.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="cv.pdf" download>Download CV</a>
-        <a class="btn btn-ghost" href="#projects">See my work</a>
+        <a class="btn btn-light" href="cv.pdf" download>Download CV</a>
+        <a class="btn btn-line" href="#projects">View projects</a>
       </div>
+      <ul class="hero-links">
+        <li><a href="https://github.com/khuwaja-mahdi" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:khuwajamahdi445@gmail.com">Email</a></li>
+        <li><a href="tel:+923023323153">0302-3323153</a></li>
+        <li>Lahore, Pakistan</li>
+      </ul>
     </div>
 
-    <figure class="results" aria-labelledby="results-title">
-      <figcaption id="results-title">Model accuracy across my work</figcaption>
-      <ul class="bars">
-        <li>
-          <div class="bar-head"><span>Milk price prediction</span><strong>95%</strong></div>
-          <div class="bar" role="img" aria-label="95 percent"><span style="--w:95%"></span></div>
-          <p>CatBoost, Fauji Foods Limited</p>
-        </li>
-        <li>
-          <div class="bar-head"><span>Milk volume prediction</span><strong>93%</strong></div>
-          <div class="bar" role="img" aria-label="93 percent"><span style="--w:93%"></span></div>
-          <p>CatBoost, Fauji Foods Limited</p>
-        </li>
-        <li>
-          <div class="bar-head"><span>Customer churn prediction</span><strong>79.5%</strong></div>
-          <div class="bar" role="img" aria-label="79.5 percent"><span style="--w:79.5%"></span></div>
-          <p>Random Forest, 7,032 telecom records</p>
-        </li>
-      </ul>
-    </figure>
+    <div class="panel" aria-label="Model accuracy summary">
+      <p class="panel-title">Model accuracy</p>
+      <div class="rings">
+        <div class="ring">
+          <svg viewBox="0 0 100 100" role="img" aria-label="95 percent">
+            <circle class="ring-bg" cx="50" cy="50" r="42"/>
+            <circle class="ring-fg" cx="50" cy="50" r="42" style="--off:13.2"/>
+          </svg>
+          <strong>95%</strong>
+          <span>Milk price</span>
+        </div>
+        <div class="ring">
+          <svg viewBox="0 0 100 100" role="img" aria-label="93 percent">
+            <circle class="ring-bg" cx="50" cy="50" r="42"/>
+            <circle class="ring-fg" cx="50" cy="50" r="42" style="--off:18.5"/>
+          </svg>
+          <strong>93%</strong>
+          <span>Milk volume</span>
+        </div>
+      </div>
+      <p class="panel-note">CatBoost models built during my internship at Fauji Foods Limited.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-wrap" aria-label="Highlights">
+  <div class="wrap">
+    <ul class="stats">
+      <li><strong>95%</strong><span>Price prediction accuracy</span></li>
+      <li><strong>93%</strong><span>Volume prediction accuracy</span></li>
+      <li><strong>17K+</strong><span>Rows analyzed in portfolio projects</span></li>
+      <li><strong>4</strong><span>End-to-end data projects</span></li>
+    </ul>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section class="sec" id="about">
-  <div class="wrap sec-in">
-    <h2>About</h2>
-    <div class="body">
-      <p>I'm a BS Computer Science student at NUML University, Lahore, currently in my fifth semester. I enjoy the full data workflow: getting data out of a database, cleaning it, finding what drives the numbers, and presenting the result in a form a team can use.</p>
+  <div class="wrap two">
+    <div class="reveal">
+      <h2>About me</h2>
+      <p>I'm a BS Computer Science student at NUML University, Lahore, in my fifth semester. I enjoy the full data workflow: getting data out of a database, cleaning it, finding what drives the numbers, and presenting the result in a form a team can use.</p>
       <p>My first industry experience was a data science internship at Fauji Foods Limited, where I worked with real procurement data to forecast milk prices and volumes and to plan more fuel-efficient collection routes. Alongside it, I've completed two end-to-end portfolio projects in Python, SQL and Power BI.</p>
-      <dl class="facts">
+    </div>
+    <aside class="facts reveal" aria-label="Quick facts">
+      <dl>
         <div><dt>Based in</dt><dd>Lahore, Pakistan</dd></div>
-        <div><dt>Studying</dt><dd>BS Computer Science, NUML University</dd></div>
+        <div><dt>Studying</dt><dd>BS Computer Science, NUML University (2024 to 2028)</dd></div>
+        <div><dt>Experience</dt><dd>Data science internship, Fauji Foods Limited</dd></div>
         <div><dt>Looking for</dt><dd>Data analyst or data science internship or entry-level role, remote or on-site</dd></div>
       </dl>
-    </div>
+    </aside>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section class="sec" id="experience">
-  <div class="wrap sec-in">
-    <h2>Experience</h2>
-    <div class="body">
+<section class="sec sec-alt" id="experience">
+  <div class="wrap">
+    <h2 class="reveal">Experience</h2>
+    <div class="timeline reveal">
       <article class="job">
+        <span class="node" aria-hidden="true"></span>
         <header>
-          <h3>Data Science Intern</h3>
-          <p class="meta">Fauji Foods Limited <span>Jul 13 to Aug 7, 2026</span></p>
+          <div>
+            <h3>Data Science Intern</h3>
+            <p class="company">Fauji Foods Limited</p>
+          </div>
+          <p class="when">Jul 13 to Aug 7, 2026</p>
         </header>
-        <ul class="plain">
+        <ul class="ticks">
           <li>Retrieved milk-procurement data from the company's MongoDB database through an API, then cleaned, aggregated (daily and weekly) and engineered features for supplier-wise analysis.</li>
-          <li>Trained and evaluated CatBoost models, reaching 95% prediction accuracy for milk price and 93% for milk volume.</li>
+          <li>Trained and evaluated CatBoost models, reaching <strong>95%</strong> prediction accuracy for milk price and <strong>93%</strong> for milk volume.</li>
           <li>Delivered an interactive tool with charts to review historical supplier price and volume and forecast next week's aggregated price and volume.</li>
           <li>Built a route-optimization tool to minimize fuel consumption of milk-collection trucks, including a module to restructure existing routes and design new ones.</li>
+        </ul>
+        <ul class="chips">
+          <li>MongoDB</li><li>API</li><li>Python</li><li>Pandas</li><li>CatBoost</li><li>Feature engineering</li>
         </ul>
       </article>
     </div>
@@ -108,38 +140,81 @@
 
 <!-- PROJECTS -->
 <section class="sec" id="projects">
-  <div class="wrap sec-in">
-    <h2>Projects</h2>
-    <div class="body">
+  <div class="wrap">
+    <h2 class="reveal">Projects</h2>
+    <p class="sec-sub reveal">Two projects from my internship and two end-to-end portfolio projects.</p>
+    <div class="cards">
 
-      <article class="proj">
-        <h3>Milk price and volume forecasting</h3>
-        <p class="tag-line">Internship project at Fauji Foods Limited</p>
-        <p>Supplier data from MongoDB, pulled through an API and aggregated by day and week. CatBoost models predict next week's aggregated price (95% accuracy) and volume (93%). The tool also shows each supplier's price and volume history in charts.</p>
-        <p class="stack">CatBoost, Python, Pandas, MongoDB, feature engineering</p>
+      <article class="card reveal">
+        <div class="visual v-flow" aria-hidden="true">
+          <ol>
+            <li>MongoDB</li>
+            <li>Clean and aggregate</li>
+            <li>CatBoost</li>
+            <li>Forecast</li>
+          </ol>
+        </div>
+        <div class="card-body">
+          <p class="badge badge-work">Internship project</p>
+          <h3>Milk price and volume forecasting</h3>
+          <p>Supplier data from MongoDB, pulled through an API and aggregated by day and week. CatBoost models predict next week's aggregated price (<strong>95%</strong> accuracy) and volume (<strong>93%</strong>). The tool also charts each supplier's price and volume history.</p>
+          <ul class="chips"><li>CatBoost</li><li>Python</li><li>Pandas</li><li>MongoDB</li></ul>
+        </div>
       </article>
 
-      <article class="proj">
-        <h3>Milk collection route optimization</h3>
-        <p class="tag-line">Internship project at Fauji Foods Limited</p>
-        <p>A tool that recommends efficient routes for milk-collection trucks to cut fuel use. A planning module restructures the existing routes and helps design new ones.</p>
-        <p class="stack">Python, route planning, optimization</p>
+      <article class="card reveal">
+        <div class="visual v-route" aria-hidden="true">
+          <svg viewBox="0 0 300 130" preserveAspectRatio="xMidYMid meet">
+            <path class="route-old" d="M30 100 L90 30 L150 95 L210 28 L270 90"/>
+            <path class="route-new" d="M30 100 L90 30 L210 28 L270 90"/>
+            <g class="stops">
+              <circle cx="30" cy="100" r="7"/><circle cx="90" cy="30" r="7"/><circle cx="150" cy="95" r="5" class="skip"/><circle cx="210" cy="28" r="7"/><circle cx="270" cy="90" r="7"/>
+            </g>
+          </svg>
+          <p class="v-cap">Schematic of route planning</p>
+        </div>
+        <div class="card-body">
+          <p class="badge badge-work">Internship project</p>
+          <h3>Milk collection route optimization</h3>
+          <p>A tool that recommends efficient routes for milk-collection trucks to cut fuel use. A planning module restructures the existing routes and helps design new ones.</p>
+          <ul class="chips"><li>Python</li><li>Route planning</li><li>Optimization</li></ul>
+        </div>
       </article>
 
-      <article class="proj">
-        <h3>Telco customer churn analysis and prediction</h3>
-        <p class="tag-line">Portfolio project</p>
-        <p>Analyzed 7,032 customer records and found a 26.54% churn rate. Compared Logistic Regression (79% accuracy) and Random Forest (79.5%) on accuracy, precision, recall and F1-score, supported by 10+ visualizations and an interactive Power BI dashboard with 4 charts and 3 slicers.</p>
-        <p class="stack">Python, Pandas, Scikit-learn, Matplotlib, Seaborn, Power BI</p>
-        <a class="link" href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio/tree/master/Project1_Churn" target="_blank" rel="noopener">View code on GitHub</a>
+      <article class="card reveal">
+        <div class="visual v-churn">
+          <div class="donut" style="--p:26.54" role="img" aria-label="26.54 percent churn rate">
+            <strong>26.54%</strong><span>churn rate</span>
+          </div>
+          <ul class="mini-bars" aria-label="Model accuracy">
+            <li><span>Logistic Regression</span><div><i style="--w:79%"></i></div><b>79%</b></li>
+            <li><span>Random Forest</span><div><i style="--w:79.5%"></i></div><b>79.5%</b></li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <p class="badge badge-port">Portfolio project</p>
+          <h3>Telco customer churn analysis and prediction</h3>
+          <p>Analyzed 7,032 customer records, then compared two models on accuracy, precision, recall and F1-score. Supported by 10+ visualizations and an interactive Power BI dashboard with 4 charts and 3 slicers.</p>
+          <ul class="chips"><li>Python</li><li>Scikit-learn</li><li>Pandas</li><li>Seaborn</li><li>Power BI</li></ul>
+          <a class="link" href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio/tree/master/Project1_Churn" target="_blank" rel="noopener">View code on GitHub</a>
+        </div>
       </article>
 
-      <article class="proj">
-        <h3>Superstore sales dashboard</h3>
-        <p class="tag-line">Portfolio project</p>
-        <p>Analyzed 9,994 rows of US retail sales (2014 to 2017) with 15+ SQL queries, including window functions and CTEs, plus 8+ chart types in Python. West Region had the highest sales, Technology was the most profitable category, and discounts above 50% consistently caused losses. Presented in a Power BI dashboard with a custom theme.</p>
-        <p class="stack">Python, SQL Server (SSMS), Pandas, Matplotlib, Seaborn, Power BI</p>
-        <a class="link" href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio/tree/master/Project2_Sales" target="_blank" rel="noopener">View code on GitHub</a>
+      <article class="card reveal">
+        <div class="visual v-finds">
+          <ul>
+            <li><b>West</b><span>Highest sales region</span></li>
+            <li><b>Technology</b><span>Most profitable category</span></li>
+            <li><b>50%+</b><span>Discounts consistently caused losses</span></li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <p class="badge badge-port">Portfolio project</p>
+          <h3>Superstore sales dashboard</h3>
+          <p>Analyzed 9,994 rows of US retail sales (2014 to 2017) with 15+ SQL queries, including window functions and CTEs, plus 8+ chart types in Python. Presented in a Power BI dashboard with a custom theme.</p>
+          <ul class="chips"><li>Python</li><li>SQL Server</li><li>Pandas</li><li>Matplotlib</li><li>Power BI</li></ul>
+          <a class="link" href="https://github.com/khuwaja-mahdi/Data-Analyst-Portfolio/tree/master/Project2_Sales" target="_blank" rel="noopener">View code on GitHub</a>
+        </div>
       </article>
 
     </div>
@@ -147,56 +222,88 @@
 </section>
 
 <!-- SKILLS -->
-<section class="sec" id="skills">
-  <div class="wrap sec-in">
-    <h2>Skills</h2>
-    <div class="body">
-      <dl class="skills">
-        <div><dt>Data analysis</dt><dd>Python, Pandas, NumPy, Matplotlib, Seaborn, Power BI, SQL Server (SSMS), MongoDB</dd></div>
-        <div><dt>Machine learning</dt><dd>CatBoost, Scikit-learn, Logistic Regression, Random Forest, feature engineering, model evaluation, forecasting</dd></div>
-        <div><dt>SQL</dt><dd>Joins, window functions, CTEs, GROUP BY, HAVING, date functions</dd></div>
-        <div><dt>Programming and tools</dt><dd>OOP in Python, data structures (fundamentals), API data retrieval (basic), Git, GitHub, Jupyter Notebook, VS Code, MS Office</dd></div>
-      </dl>
+<section class="sec sec-alt" id="skills">
+  <div class="wrap">
+    <h2 class="reveal">Skills</h2>
+    <div class="skill-grid">
+      <div class="skill reveal">
+        <h3>Data analysis</h3>
+        <ul class="chips"><li>Python</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li><li>Power BI</li><li>SQL Server (SSMS)</li><li>MongoDB</li></ul>
+      </div>
+      <div class="skill reveal">
+        <h3>Machine learning</h3>
+        <ul class="chips"><li>CatBoost</li><li>Scikit-learn</li><li>Logistic Regression</li><li>Random Forest</li><li>Feature engineering</li><li>Model evaluation</li><li>Forecasting</li></ul>
+      </div>
+      <div class="skill reveal">
+        <h3>SQL</h3>
+        <ul class="chips"><li>Joins</li><li>Window functions</li><li>CTEs</li><li>GROUP BY</li><li>HAVING</li><li>Date functions</li></ul>
+      </div>
+      <div class="skill reveal">
+        <h3>Programming and tools</h3>
+        <ul class="chips"><li>OOP in Python</li><li>Data structures (fundamentals)</li><li>API data retrieval (basic)</li><li>Git</li><li>GitHub</li><li>Jupyter Notebook</li><li>VS Code</li><li>MS Office</li></ul>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- EDUCATION -->
 <section class="sec" id="education">
-  <div class="wrap sec-in">
-    <h2>Education</h2>
-    <div class="body">
-      <ul class="edu">
-        <li><div><h3>BS Computer Science</h3><p>NUML University, Lahore. Currently in 5th semester.</p></div><span>2024 to 2028</span></li>
-        <li><div><h3>Intermediate (ICS)</h3><p>Punjab Group of Colleges, Lahore</p></div><span>2022 to 2024</span></li>
-        <li><div><h3>Matriculation</h3><p>The Green School, Lahore</p></div><span>2020 to 2022</span></li>
-      </ul>
-    </div>
+  <div class="wrap">
+    <h2 class="reveal">Education</h2>
+    <ul class="edu reveal">
+      <li><span class="yr">2024 to 2028</span><div><h3>BS Computer Science</h3><p>NUML University, Lahore. Currently in 5th semester.</p></div></li>
+      <li><span class="yr">2022 to 2024</span><div><h3>Intermediate (ICS)</h3><p>Punjab Group of Colleges, Lahore</p></div></li>
+      <li><span class="yr">2020 to 2022</span><div><h3>Matriculation</h3><p>The Green School, Lahore</p></div></li>
+    </ul>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="sec contact" id="contact">
-  <div class="wrap sec-in">
-    <h2>Contact</h2>
-    <div class="body">
-      <p class="big"><a href="mailto:khuwajamahdi445@gmail.com">khuwajamahdi445@gmail.com</a></p>
-      <p>Send me a message about an internship or entry-level role, or ask for anything you'd like to see in more detail. My CV and code are below.</p>
-      <ul class="contact-list">
-        <li><span>Phone</span><a href="tel:+923023323153">0302-3323153</a></li>
-        <li><span>GitHub</span><a href="https://github.com/khuwaja-mahdi" target="_blank" rel="noopener">github.com/khuwaja-mahdi</a></li>
-        <li><span>CV</span><a href="cv.pdf" download>Download as PDF</a></li>
-        <li><span>Location</span>Lahore, Pakistan</li>
-      </ul>
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div>
+      <h2>Hiring a data analyst or data science intern?</h2>
+      <p>I'd like to hear about the role. Send me an email or download my CV, and I'll reply as soon as I can.</p>
+      <div class="actions">
+        <a class="btn btn-light" href="mailto:khuwajamahdi445@gmail.com">Email me</a>
+        <a class="btn btn-line" href="cv.pdf" download>Download CV</a>
+      </div>
     </div>
+    <ul class="contact-list">
+      <li><span>Email</span><a href="mailto:khuwajamahdi445@gmail.com">khuwajamahdi445@gmail.com</a></li>
+      <li><span>Phone</span><a href="tel:+923023323153">0302-3323153</a></li>
+      <li><span>GitHub</span><a href="https://github.com/khuwaja-mahdi" target="_blank" rel="noopener">github.com/khuwaja-mahdi</a></li>
+      <li><span>Location</span>Lahore, Pakistan</li>
+    </ul>
   </div>
 </section>
 
 </main>
 
 <footer>
-  <div class="wrap">&copy; 2026 Muhammad Mahdi. Data Analyst, Lahore, Pakistan.</div>
+  <div class="wrap foot-in">
+    <span>&copy; 2026 Muhammad Mahdi</span>
+    <a href="#top">Back to top</a>
+  </div>
 </footer>
 
+<script>
+(function(){
+  var btn=document.querySelector('.menu-btn'), nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+  });
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
 </body>
 </html>
